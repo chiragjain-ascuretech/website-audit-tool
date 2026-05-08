@@ -1,0 +1,21 @@
+{
+  "name": "@website-audit/analyzers",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/index.ts",
+  "types": "src/types.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "cheerio": "*",
+    "playwright": "*"
+  },
+  "devDependencies": {
+    "tsx": "*",
+    "typescript": "*",
+    "@types/node": "*"
+  }
+}
+

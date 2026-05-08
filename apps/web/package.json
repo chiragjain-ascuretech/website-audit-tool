@@ -1,0 +1,28 @@
+{
+  "name": "@website-audit/web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack -p ${WEB_PORT:-3000}",
+    "dev:clean": "pkill -f \"next dev\" || true && rm -f .next/dev/lock && next dev --webpack -p ${WEB_PORT:-3000}",
+    "build": "next build",
+    "start": "next start -p ${WEB_PORT:-3000}",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "dotenv": "*",
+    "next": "*",
+    "react": "*",
+    "react-dom": "*"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.4",
+    "@types/node": "*",
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "autoprefixer": "*",
+    "postcss": "*",
+    "tailwindcss": "*",
+    "typescript": "*"
+  }
+}
